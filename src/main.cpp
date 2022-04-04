@@ -7,8 +7,10 @@
 int main()
 {   system("cls");
 
-    std::cout << prime::is_prime(5) << std::endl;
-    std::cout << prime::find_prime(1200);
+    int input = 1;
+    std::cout << "Which number prime do you want to find?" << std::endl;
+    std::cin >> input;
+    std::cout << prime::find_prime(input);
 
     return 0;
 }
